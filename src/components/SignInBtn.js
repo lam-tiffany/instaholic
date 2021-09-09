@@ -21,7 +21,6 @@ const SignInBtn = () => {
     let user = await signInWithGoogle();
     if (user) {
       setUser(user);
-      console.log(user)
     }
 	};
 	return <Button onClick={signInBtnClick}>Sign In with Google</Button>;

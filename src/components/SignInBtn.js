@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { UserContext } from "../contexts/user";
-import { signInWithGoogle } from "../services/auth";
+import { signInWithGoogle } from "../helpers/auth";
 
 const Button = styled.button`
 	background-color: #de5246;

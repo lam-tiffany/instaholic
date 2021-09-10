@@ -30,6 +30,7 @@ const Header = styled.div`
 		margin-right: 0.5rem;
 	}
 	button {
+		font-size: 1rem;
 		background: white;
 		border: none;
 		cursor: pointer;

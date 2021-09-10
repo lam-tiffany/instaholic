@@ -12,6 +12,7 @@ const Button = styled.button`
 	border: none;
 	font-weight: 500;
 	cursor: pointer;
+	font-size: 1rem;
 `;
 
 const SignInBtn = () => {

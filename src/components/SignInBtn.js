@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import styled from "styled-components";
-import { UserContext } from "../contexts/user";
+import { UserContext } from "../helpers/user";
 import { signInWithGoogle } from "../helpers/auth";
+import styled from "styled-components";
 
 const Button = styled.button`
-	background-color: #de5246;
+	background-color: var(--primary-color);
 	text-align: center;
 	padding: 0.5rem 1rem;
 	color: white;
@@ -15,13 +15,13 @@ const Button = styled.button`
 `;
 
 const SignInBtn = () => {
-  const [user, setUser] = useContext(UserContext).user;
+	const [user, setUser] = useContext(UserContext).user;
 
 	const signInBtnClick = async () => {
-    let user = await signInWithGoogle();
-    if (user) {
-      setUser(user);
-    }
+		let user = await signInWithGoogle();
+		if (user) {
+			setUser(user);
+		}
 	};
 	return <Button onClick={signInBtnClick}>Sign In with Google</Button>;
 };
